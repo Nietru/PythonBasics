@@ -153,7 +153,10 @@ for i in range(10):  # range(10) generates a sequence of numbers from 0 to 9. Th
                      # It will start at 0 and increment by 1 each time the loop executes.
                      # "i" is short for "index" or "iterator". It is a common convention to use i as the loop counter variable name. 
                      # you can use any variable name you want, but using i is a common convention. You can also use j, k, l, m, n, etc. for nested loops.
-    print(i)    # prints the value of i each time the loop executes.
+    print(i)    
 
 for i in range(91, 101):  # range(91, 101) generates a sequence of numbers from 91 to 100 (first number is inclusive and second number is exclusive, thats why it stops at 100).
-    print(i)    # prints the value of i each time the loop executes.
+    print(i)    
+
+for i in range (1, 11, 2):  # will increment by 2 each time the loop executes. The third parameter in range() is the step value.
+    print(i)    
