@@ -160,3 +160,8 @@ for i in range(91, 101):  # range(91, 101) generates a sequence of numbers from 
 
 for i in range (1, 11, 2):  # will increment by 2 each time the loop executes. The third parameter in range() is the step value.
     print(i)    
+
+some_name = "Tifannie Truman"
+
+for letter in some_name:
+    print(letter, end = "~")
