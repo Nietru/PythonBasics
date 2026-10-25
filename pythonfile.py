@@ -164,4 +164,9 @@ for i in range (1, 11, 2):  # will increment by 2 each time the loop executes. T
 some_name = "Tifannie Truman"
 
 for letter in some_name:
-    print(letter, end = "~")
+    print(letter, end = "~") # inserts "~" between each letter instead of a new line. 
+                            #The end parameter in print() specifies what to print at the end of the output. 
+                            # The default value is "\n" which is a new line character. You can change it to any string you want.
+
+# THIS FILE IS GETTING LONG AND WANT TO REUSE VARIABLES WITHOUT COMMENTING OUT THE CODE ABOVE, SO I WILL CREATE A NEW FILE FOR THE NEXT SECTION OF CODE. "pythonfile2.py"
+
