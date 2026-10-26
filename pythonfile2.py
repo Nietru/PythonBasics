@@ -27,9 +27,41 @@ print(fruits)
 #fruits.clear()  # removes all elements from the list
 #print(fruits)
 
+print('\n')  # new line, creates and empty line in the output before the next print statement.
+
 for fruit in fruits:  # iterates through each element in the list and assigns it to the variable fruit
     print (fruit)     # prints each element in the list on a new line
 for fruit in fruits:
     print(fruit, end = " ")  # prints each element in the list, end does a space instead of a new line after each element. (default is "\n" which is a new line character)
 
-#
+print('\n')  
+
+
+#TUPLE - immutable, which means we cannot change the values of the elements in the list.
+
+dogs = ("Pug", "Golden", "Labrador", "Bulldog")  # tuple of dog breeds
+print(dogs)
+
+for dog in dogs:  # iterates through each element in the list and assigns it to the variable dog
+    print(dog, end = " ")
+
+print('\n') 
+
+people = {"tifaNNie", "Genevieve", "dahlia", "jolene",}  # set of people names (unordered collection of unique elements
+                                                        # will change the order of the elements each time the program is run)
+
+people.add("dylan")  # adds a new element to the set
+people.remove("jolene")  # removes an element from the set
+#people.clear()  # removes all elements from the set
+
+print(people)  # prints the entire set, and converts the set to lowercase to make the search case-insensitive.
+
+person = input("Enter name to search for: ").lower()
+lowercase_set = {person.lower() for person in people}  # creates a new set with all elements in lowercase, that way user input will match regarless of case. (case-insensitive search)
+
+# sets are best for membership testing, which means checking if an element is in the set or not. (faster than lists and tuples)
+
+if person in lowercase_set:  # checks if the element "(user chosen name)" is in the set
+    print(f"{person} already exists.")
+else:
+    print(f"{person} does NOT exist.")
